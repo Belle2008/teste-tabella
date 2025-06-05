@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 229, 229);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Escopo para tabela periódica */
+  #tabela {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 4px;
+    margin-left: -2px;
+  }
+  
+  #tabela .elemento {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 1px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  #tabela .numero-atomico {
+    top: 2px;
+    left: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(9, 9, 9);
+    position: relative;
+  }
+  
+  #tabela .simbolo {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Tooltip com escopo global, pode deixar */
+  .tooltip-fixa {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 12px;
+    background: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: sans-serif;
+    font-size: 14px;
+    max-width: 600px;
+    margin-top: -570px;
+    margin-left: 180px;
+  }
+  
+  /* Tooltip interno da tabela periódica */
+  .tooltip-titulo {
+    background: #0f3f3d;
+    color: #fff;
+    padding: 6px 10px;
+    font-weight: bold;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .tooltip-box {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+  }
+  
+  .tooltip-info-esq {
+    width: 80px;
+    text-align: center;
+    background: #0e0d0d;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  
+  .simbolo-big {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  
+  .tooltip-info-dir {
+    flex: 1;
+    padding-left: 10px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  #tabela .elemento:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Caixa de cálculo - estilo separado */
+  .caixacalculo {
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    margin-top: -120px;
+    margin-left: 10px;
+  }
+  
