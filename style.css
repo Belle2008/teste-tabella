@@ -1,0 +1,32 @@
+.caixacalculo .tabela-periodica-calculo {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+   
+  .caixacalculo .elemento-calculo {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #eee;
+    user-select: none;
+  }
+   
+  .caixacalculo .elemento-calculo:hover {
+    background-color: #ccc;
+  }
+   
+  .caixacalculo #h {
+    background-color: #ffcccc;
+  }
+   
+  .caixacalculo #he {
+    background-color: #ccffcc;
+  }
+   
+  .caixacalculo .selecionado {
+    border: 2px solid yellow;
+  }
